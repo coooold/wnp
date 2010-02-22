@@ -1,5 +1,5 @@
-#summary One-sentence summary of this page.
 #labels Featured,Phase-Deploy
+#WNP使用方法
 
 <h4>使用简介</h4>
 
@@ -18,4 +18,3 @@
 <h5>3、更改PHP配置文件</h5>
 <li>php.ini 路径 wnp/php/php.ini ，具体配置方法，网上有很多教程，这里不再详细介绍</li>
 </ul>
-
