@@ -1,8 +1,7 @@
 #summary One-sentence summary of this page.
 #labels Featured,Phase-Deploy
 
-= Introduction =
-
+<h4>使用简介</h4>
 
 <ul>
 
@@ -20,10 +19,3 @@
 <li>php.ini 路径 wnp/php/php.ini ，具体配置方法，网上有很多教程，这里不再详细介绍</li>
 </ul>
 
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
