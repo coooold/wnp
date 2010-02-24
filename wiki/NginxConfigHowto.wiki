@@ -1,0 +1,9 @@
+#labels Featured,Phase-Deploy
+#关于Nginx配置的网址.
+
+<h5>推荐链接</h5>
+<ul>
+<li><a href='http://sudone.com/conf/nginx.conf.html' target='_blank'>便于管理的nginx配置</a></li>
+
+
+</ul>
