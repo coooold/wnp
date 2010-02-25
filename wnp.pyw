@@ -47,8 +47,6 @@ class NginxThread(Thread):
             if self.quit:
                 print 'nginxquit'
                 break
-                return 
-                print 'abort'
             print 'running-nginx'
             time.sleep(1)
         return
@@ -89,13 +87,11 @@ class PHPThread(Thread):
                 print 'rung-php\n'
                 self.initRun();
                 #self.process.wait()
-                
                 print 'php-down'
             if self.quit:
                 print 'phpquit'
                 break
-                return 
-                print 'abort'
+
             print 'running-php'
             time.sleep(1)
         return
