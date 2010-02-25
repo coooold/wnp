@@ -128,7 +128,7 @@ class TaskBarIcon(wx.TaskBarIcon):
         
         wx.TaskBarIcon.__init__(self)
         
-        
+        self.firstRP = True
         self.startnginx = False
         self.stopnginx = False
         self.startphp = False
@@ -139,9 +139,9 @@ class TaskBarIcon(wx.TaskBarIcon):
         self.nginx_process = NginxThread(self)
         
         
-        self.StartNginx()
-        self.StartPHP()
         
+        self.StartPHP()
+        self.StartNginx()
         
         self.SetIcon(wx.Icon(name='nginx.ico', type=wx.BITMAP_TYPE_ICO), 'WNP-nginx-php')
         
@@ -202,8 +202,14 @@ class TaskBarIcon(wx.TaskBarIcon):
         self.ReloadNginx()
         
     def OnRestartPHP(self,event):
+        
         self.StopPHP()
         self.StartPHP()
+        
+        if self.firstRP:
+            self.StopNginx()
+            self.StartNginx()
+            self.firstRP = False
     
     def OnRestartNginx(self,event):
         self.StopNginx()
